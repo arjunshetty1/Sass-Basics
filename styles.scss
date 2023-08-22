@@ -1,0 +1,42 @@
+// styles.scss
+// Define variables for colors and margins
+$textColor: rgb(246, 5, 230);
+$primaryBtn: green;
+$parabg: lightgrey;
+$paraClr: black;
+$paraMargin: 80px;
+
+// Mixin to apply common styling
+@mixin arjun($bgclr) {
+    background-color: $bgclr;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5rem;
+    overflow-x: hidden;
+}
+
+// Import styles from "para.scss"
+@import "para.scss";
+
+// Styling for button element
+button {
+    background-color: $primaryBtn;
+}
+
+// Styling for h1 element
+h1 {
+    color: $textColor;
+}
+
+// Styling for p element
+p {
+    color: $textColor;
+}
+
+// Styling for h2 element
+h2 {
+    color: blue;
+}

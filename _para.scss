@@ -1,0 +1,23 @@
+// para.scss
+// Additional styles for container with class "para"
+.para {
+    @include arjun(yellow); // Apply mixin to style the container
+    // background-color: $parabg; // Background color (commented out)
+    margin: $paraMargin; // Set margin for the container
+    width: calc(100% - 40%); // Calculate width with a margin
+
+    h1 {
+        color: $paraClr; // Set color for h1 element within the container
+
+        &::before {
+            content: "hi "; // Add content before h1 element
+        }
+    }
+}
+
+// Styling for container with class "testh2"
+.testh2 {
+    h2 {
+        @extend h2; // Extend styles of h2 element
+    }
+}
